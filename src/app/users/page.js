@@ -53,7 +53,7 @@ export default function Page() {
               <td>{item.firstname}</td>
               <td>{item.lastname}</td>
               <td><Link href="#" className="btn btn-warning">Edit</Link></td>
-              <td><Link href="#" className="btn btn-danger">Del</Link></td>
+              <td className="btn btn-danger" onClick={() => DeleteUser(item.id)}>Del</td>
             </tr>
           ))}
         </tbody>
